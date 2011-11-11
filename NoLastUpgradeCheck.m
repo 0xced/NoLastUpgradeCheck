@@ -21,7 +21,10 @@ static void setLastUpgradeCheck(id self, SEL _cmd, id lastUpgradeCheck)
 	
 	NSString *pluginName = [[[plugin bundlePath] lastPathComponent] stringByDeletingPathExtension];
 	NSString *version = [plugin objectForInfoDictionaryKey:@"CFBundleVersion"];
-	NSLog(@"%@ %@ loaded successfully", pluginName, version);
+	NSString *bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
+	BOOL isXcode = [bundleIdentifier isEqualToString:@"com.apple.Xcode"] || [bundleIdentifier isEqualToString:@"com.apple.dt.Xcode"];
+	if (isXcode)
+		NSLog(@"%@ %@ loaded successfully", pluginName, version);
 }
 
 @end

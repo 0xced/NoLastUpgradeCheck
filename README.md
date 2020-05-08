@@ -3,7 +3,7 @@ About
 
 **NoLastUpgradeCheck** is an Xcode plugin that prevents Xcode 4 from adding or modifying the `LastUpgradeCheck` attribute of the project.pbxproj file.
 
-This behavior is particularly annoying for people working with different versions of Xcode. The topic was discussed on the xcode-users mailing list: [Xcode keeps altering my project.pbxproj files](http://www.cocoabuilder.com/archive/xcode/306543-xcode-keeps-altering-my-project-pbxproj-files.html).
+This behavior is particularly annoying for people working with different versions of Xcode. The topic was discussed on the xcode-users mailing list: [Xcode keeps altering my project.pbxproj files](https://web.archive.org/web/20180118234553/http://www.cocoabuilder.com/archive/xcode/306543-xcode-keeps-altering-my-project-pbxproj-files.html).
 
 Installation
 ============
